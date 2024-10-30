@@ -1,0 +1,28 @@
+.faqs-title {
+  color: var(--primary-color);
+}
+
+
+
+.faqs-item {
+  margin-bottom: 15px;
+}
+
+.faqs-item__question {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faqs-item__question:hover {
+  background-color: #eee;
+}
+
+.faqs-item__content {
+  border: 1px solid #eee;
+  border-top: none;
+  padding: 15px;
+}

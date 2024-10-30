@@ -1,0 +1,107 @@
+#lbk_list_faqs {
+    position: relative;
+    margin-top: 20px;
+    padding: .7em 2em 1em;
+    min-width: 255px;
+    border: 1px solid #c3c4c7;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 4%);
+    background: #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#lbk_list_faqs #lbk_list_faqs_heading {
+    display: flex;
+    position: relative;
+}
+
+#lbk_list_faqs h2:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 90px;
+    border-bottom: 1px solid #23ad00;
+}
+
+#lbk_list_faqs #lbk_list_faqs_heading #add_new_faqs_button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#lbk_list_faqs .collapsible {
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
+#lbk_list_faqs .faqs-content {
+    padding: 0 30px;
+}
+
+#lbk_list_faqs .collapsible .collapsible_heading {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    border-top: 1px solid #ccc;
+    padding: 0 30px;
+}
+
+#lbk_list_faqs .collapsible .collapsible_heading #lbk_delete_faqs {
+    position: absolute;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#lbk_list_faqs .collapsible.state-open .collapsible_heading {
+    border-bottom: 1px solid #ccc;
+}
+
+#lbk_list_faqs .collapsible h4 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #141414;
+}
+
+#lbk_list_faqs .collapsible-icon-toggle {
+    position: absolute;
+    cursor: pointer;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border: 0;
+    background: 0;
+    top: 50%;
+    right: 40px;
+}
+
+#lbk_list_faqs .collapsible.state-close .collapsible_content {
+    display: none;
+}
+
+#lbk_list_faqs .collapsible.state-close .collapsible-icon-toggle::before {
+    font: normal 20px/1 dashicons;
+    display: inline-block;
+    content: '\f347';
+    text-decoration: none !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#lbk_list_faqs .collapsible.state-open .collapsible-icon-toggle::before {
+    font: normal 20px/1 dashicons;
+    display: inline-block;
+    content: "\f343";
+    text-decoration: none !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#lbk_list_faqs .faqs-content .faqsData:last-child {
+    padding-bottom: 15px;
+}
+
+#lbk_list_faqs .collapsible .collapsible_heading:hover {
+    background: #eee;
+}
